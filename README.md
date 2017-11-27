@@ -11,3 +11,11 @@ Need to integrate with webpack to organize the resource.
 * Run `> npm install` to install the project dependencies
 * Run `> npm start` command to start the automation
 
+
+Technology stack
+
+NodeJS: npm init
+        install dependencies in the package.json
+ExpressJS
+Bootrap & css & HTML5
+Webpack: configuration file and dependencies management
