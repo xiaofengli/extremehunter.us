@@ -19,3 +19,11 @@ NodeJS: npm init
 ExpressJS
 Bootrap & css & HTML5
 Webpack: configuration file and dependencies management
+
+
+Requirement for this project
+
+1. Website should be good to look from computer or mobile device.
+2. When it is mobile device, it should show hamberger menu...
+3. The navigation bar should stay when it scrolls in the mobile devices
+4. Image sliding feature
