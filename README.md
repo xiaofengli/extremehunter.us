@@ -27,3 +27,9 @@ Requirement for this project
 2. When it is mobile device, it should show hamberger menu...
 3. The navigation bar should stay when it scrolls in the mobile devices
 4. Image sliding feature
+
+Code commit and contribution
+1/ git checkout master
+2/ git pull or git fetch origin -p (sync origin/master and remove your local branch that was deleted on remote)
+3/ Create your branch with -b
+git checkout -b xiaofeng/add-img-slider
