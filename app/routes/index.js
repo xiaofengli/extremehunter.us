@@ -6,6 +6,7 @@ router.get('/', function(req, res) {
   var pagePhotos = [];
   var pageSpeakers = data.speakers;
 
+  // Functional programing, lambda calculus
   data.speakers.forEach(function(item) {
     pagePhotos = pagePhotos.concat(item.artwork);
   });
