@@ -2,7 +2,20 @@
 <html>
   <head><% include partials/template/head.ejs %></head>
   <body id="<%= pageID %>">
+          <div id="Slideshow">
+            <div id="Slider">
+              <img src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg"/>
+              <img src="http://www.highreshdwallpapers.com/wp-content/uploads/2014/01/Outer-Space-HD-Wallpaper-Pack-5.jpg"/>
+              <img src="https://images4.alphacoders.com/106/thumb-1920-106826.jpg"/>
+            </div>
+            <div id="Arrows">
+              <i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+              <i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+       
     <% include partials/template/header.ejs %>
+    
     <% include partials/content/speakerslist.ejs %>
     <div class="container">
       <div class="row">
@@ -16,5 +29,15 @@
       </div>
     </div><!-- container -->
     <% include partials/template/jsdefaults.ejs %>
+    <script>
+       $("#Next").click(function(){
+        $("#Slider").append($("#Slider img:first-of-type"));
+      });
+      
+      $("#Prev").click(function(){
+        $("#Slider").prepend($("#Slider img:last-of-type"));
+      });
+        </script>
   </body>
 </html>
+
