@@ -261,21 +261,21 @@ header .navbar-inverse .navbar-nav>li>a {
 }
 
 #Arrows i{
-	background-color: rgba(255, 255, 255, .25);
-	color: rgb(184, 196, 247);
+	background-color: transparent;
+	color: transparent;
 	cursor: pointer;
 	height: 30px;
-	padding: 15px;
+	
   margin-block-end:0px;
 	transition: background-color .5s, color .5s;
 }
 
 #Arrows i:first-of-type{ 
-	padding-right: 20px;
+	padding-right: 15px;
 }
 
 #Arrows i:last-of-type{ 
-	padding-left: 20px;
+	padding-left: 15px;
 }
 
 #Arrows i:hover{
