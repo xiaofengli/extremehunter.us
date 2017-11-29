@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head><% include partials/template/head.ejs %></head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <body id="<%= pageID %>">
-          <div id="Slideshow">
-            <div id="Slider">
-              <img src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg"/>
-              <img src="http://www.highreshdwallpapers.com/wp-content/uploads/2014/01/Outer-Space-HD-Wallpaper-Pack-5.jpg"/>
-              <img src="https://images4.alphacoders.com/106/thumb-1920-106826.jpg"/>
-            </div>
-            <div id="Arrows">
-              <i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-              <i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-            </div>
-          </div>
        
     <% include partials/template/header.ejs %>
+    <div id="Slideshow">
+      <div id="Slider">
+        <img class="mySlides w3-animate-fading" src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg"/>
+        <img class="mySlides w3-animate-fading" src="http://www.highreshdwallpapers.com/wp-content/uploads/2014/01/Outer-Space-HD-Wallpaper-Pack-5.jpg"/>
+        <img class="mySlides w3-animate-fading" src="https://images4.alphacoders.com/106/thumb-1920-106826.jpg"/>
+      </div>
+      <div id="Arrows">
+        <i id="Prev" class="fa fa-chevron-left fa-2x" onclick="plusDivs(-1)" aria-hidden="true"></i>
+        <i id="Next" class="fa fa-chevron-right fa-2x" onclick="plusDivs(+1)" aria-hidden="true"></i>
+      </div>
+    </div>
     
     <% include partials/content/speakerslist.ejs %>
     <div class="container">
@@ -30,13 +33,37 @@
     </div><!-- container -->
     <% include partials/template/jsdefaults.ejs %>
     <script>
-       $("#Next").click(function(){
-        $("#Slider").append($("#Slider img:first-of-type"));
-      });
+       var slideIndex = 1;
+       showDivs(slideIndex);
+       
+       function plusDivs(n) {
+         showDivs(slideIndex += n);
+       }
+       
+       function showDivs(n) {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         if (n > x.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = x.length}
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+         }
+         x[slideIndex-1].style.display = "block";  
+       }
+       carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 8000); // Change image every 2 seconds
+}
       
-      $("#Prev").click(function(){
-        $("#Slider").prepend($("#Slider img:last-of-type"));
-      });
         </script>
   </body>
 </html>
