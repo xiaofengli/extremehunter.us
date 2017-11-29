@@ -225,3 +225,104 @@ header .navbar-inverse .navbar-nav>li>a {
     width: 20%;
   }
 }
+
+/** slide show **/
+
+
+
+#Slideshow{
+	align-items: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	position: cover;
+}
+
+#Slider{
+	border: 20px solid #FFEB8B;
+	height: 400px;
+	overflow: hidden;
+	width: cover;
+}
+
+#Slider img{
+	height: 100%;
+	width: 100%;
+	transition: all 1s;
+}
+
+#Arrows{
+	display: flex;
+	justify-content:space-between;
+	height: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+#Arrows i{
+	background-color: transparent;
+	color: transparent;
+	cursor: pointer;
+	height: 30px;
+	
+  margin-block-end:0px;
+	transition: background-color .5s, color .5s;
+}
+
+#Arrows i:first-of-type{ 
+	padding-right: 15px;
+}
+
+#Arrows i:last-of-type{ 
+	padding-left: 15px;
+}
+
+#Arrows i:hover{
+	background-color: rgba(28,29,33, .75);
+	color: #EEEFF7;
+}
+
+h1{
+	color: #1C1D21;
+	font-family: righteous;
+	font-size: 2.5em;
+	padding: 20px;
+}
+
+h2{
+	color: #1C1D21;
+	font-family: "Open Sans";
+	font-size: 1.5em;
+	padding: 20px;
+}
+
+#MeLink{
+  background-color: rgba(255,255,255, 0);
+  border: 10px solid #1C1D21;
+  border-radius: 80px;
+  bottom: 20px;
+  height: 80px;
+  overflow: hidden;
+  position: fixed;
+  right: 20px;
+  width: 80px;
+  z-index: 2;
+  
+  transition: background-color .5s;
+}
+
+#MeLink:hover{
+  background-color: rgba(255,255,255, .25);
+}
+
+#Me{
+  border: 10px solid #1C1D21;
+  border-radius: 80px;
+  bottom: 20px;
+  height: 80px;
+  position: fixed;
+  right: 20px;
+  width: 80px;
+  z-index: 1;
+}
