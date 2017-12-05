@@ -19,8 +19,11 @@ ExpressJS
 Bootrap & css & HTML5
 Webpack: configuration file and dependencies management
 
-Code commit and contribution
-1/ git checkout master
+## Code commit and contribution
+
+### Create your branch of develop branch
+
+1/ git checkout develop
 2/ git pull or git fetch origin -p (sync origin/master and remove your local branch that was deleted on remote)
 3/ Create your branch with -b
 git checkout -b xiaofeng/add-img-slider
@@ -45,3 +48,8 @@ Untracked files:
         node_modules/
 
 Please do not commit node_modules.
+
+## Send pull request to develop branch
+
+## Merge from develop to master branch
+Master branch is always the most trustable branch.
