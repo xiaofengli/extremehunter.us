@@ -18,7 +18,6 @@
           </div>
       </noscript>
     </header>
-    <% include partials/template/header.ejs %>
     <div id="Slideshow">
       <div id="Slider">
         <!-- pictures for the slide show-->
@@ -48,6 +47,8 @@
     <% include partials/template/jsdefaults.ejs %>
     <!-- navigation bar -->
     <% include partials/template/header.ejs %>
+    <% include partials/template/footer.ejs %>
+    
     <script>
        var slideIndex = 1;
        showDivs(slideIndex);
@@ -79,8 +80,14 @@ function carousel() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel, 8000); // Change image every 2 seconds
 }
+$(function() {
+  $('.footer-links-holder h3').click(function () {
+    $(this).parent().toggleClass('active');
+  });
+});
       
         </script>
   </body>
+  
 </html>
 
