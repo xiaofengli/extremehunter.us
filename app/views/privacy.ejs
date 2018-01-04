@@ -7,18 +7,27 @@
           <div class="jumbotron hidden-xs">
           </div>
         </header>
+    
     <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-        <% include partials/content/speakerslist.ejs %>
-        </div><!-- primary -->
-        <aside class="col-sm-4">
-          <% include partials/content/artworklist.ejs %>
-        </aside><!-- secondary -->
-      </div>
-    </div><!-- container -->
-    <% include partials/template/header.ejs %>
+      <h4>Introduction</h4>
+
+<p><%-privacy[0].Introduction%></p>
+
+<h4>Use Of This Site</h4>
+
+<p><%-privacy[0].Use%></p>
+
+<h4>Accounts, Passwords and Security</h4>
+
+<p><%-privacy[0].Accounts%></p>
+
+
+</div>
+
+    
+   
     <% include partials/template/jsdefaults.ejs %>
+    <% include partials/template/header.ejs %>
     <% include partials/template/footer.ejs %>
   </body>
 </html>

@@ -245,13 +245,13 @@ header .jumbotron {
 /** slider size **/
 #Slider{
 	border: 0px solid #FFEB8B;       /** frame of the slideshow **/
-	height: 400px;
+	height: 620px;
 	overflow: hidden;
 	width: cover;
 }
 /** image size **/
 #Slider img{
-	height: 100%;
+	height: 620px;
 	width: 100%;
 	transition: all 1s;
 }
