@@ -21,10 +21,10 @@ Need to integrate with webpack to organize the resource.
 
 ## Code commit and contribution
 
-### Create your branch of develop branch
+### Create your branch off develop branch
 
 1/ git checkout develop <br>
-2/ git pull or git fetch origin -p (sync origin/master and remove your local branch that was deleted on remote) <br>
+2/ git pull or git fetch origin -p (sync origin/develop and remove your local branch that was deleted on remote) <br>
 3/ Create your branch with -b <br>
 git checkout -b xiaofeng/add-img-slider <br>
 
