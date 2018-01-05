@@ -11,31 +11,33 @@ Need to integrate with webpack to organize the resource.
 * Run `> npm install` to install the project dependencies
 * Run `> npm start` command to start the automation
 
-Technology stack
+## Technology stack
 
-NodeJS: npm init
+* NodeJS: npm init <br>
         install dependencies in the package.json
-ExpressJS
-Bootrap & css & HTML5
-Webpack: configuration file and dependencies management
+* ExpressJS
+* Bootrap & css & HTML5
+* Webpack: configuration file and dependencies management
 
 ## Code commit and contribution
 
 ### Create your branch of develop branch
 
-1/ git checkout develop
-2/ git pull or git fetch origin -p (sync origin/master and remove your local branch that was deleted on remote)
-3/ Create your branch with -b
-git checkout -b xiaofeng/add-img-slider
+1/ git checkout develop <br>
+2/ git pull or git fetch origin -p (sync origin/master and remove your local branch that was deleted on remote) <br>
+3/ Create your branch with -b <br>
+git checkout -b xiaofeng/add-img-slider <br>
 
-For example,
+For example, 
 
 E:\extremehunter.us\extremehunter.us>git add README.md
 
 E:\extremehunter.us\extremehunter.us>git add app/routes/index.js
 
 E:\extremehunter.us\extremehunter.us>git status
+
 On branch xiaofeng/show-git-cmd
+
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
