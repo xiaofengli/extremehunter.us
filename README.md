@@ -5,6 +5,9 @@ Need to integrate with webpack to organize the resource.
 1. Make sure you have these installed
 	- [node.js](http://nodejs.org/)
 	- [git](http://git-scm.com/)
+	- [eclipse](eclipse.org)
+	- [eclipse tomcat plugin](oxygen)
+	- [tomcat zip](t8 zip)
 2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone CLONEURL`
 3. CD to the folder `cd FOLDERNAME`
 * Run `> npm install -g nodemon` to install nodemod globally
