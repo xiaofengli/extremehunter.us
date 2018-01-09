@@ -289,15 +289,15 @@ header .jumbotron {
 }
 
 .footer-distributed{
-	background-color: #292c2f;
+	background-color: #FFEB8B;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
 	padding: 55px 50px;
 	margin-top: 80px;
+	color: #C1343F
 }
 
 .footer-distributed .footer-left,
@@ -322,13 +322,13 @@ header .jumbotron {
 }
 
 .footer-distributed h3 span{
-	color:  #5383d3;
+	color:  #C1343F;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  #C1343F;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -387,7 +387,7 @@ header .jumbotron {
 
 .footer-distributed .footer-center p a{
 	color:  #5383d3;
-	text-decoration: none;;
+	text-decoration: none;
 }
 
 
@@ -407,7 +407,7 @@ header .jumbotron {
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
+	color:  #C1343F;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
