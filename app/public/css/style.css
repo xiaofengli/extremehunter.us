@@ -37,7 +37,8 @@ header {
 header .jumbotron {
   height: 40vh;
   margin-bottom: 0;
-  background: url(../images/misc/background.jpg) no-repeat 100% 5%;
+  /* change this image if it is needed.
+  background: url(../images/misc/background.jpg) no-repeat 100% 5%;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -45,9 +46,8 @@ header .jumbotron {
 }
 
 /**  Navbar **/
-
  .navbar {
-  position:fixed;
+  position:fixed; /*fixed navigation bar feature*/
   top:0;
   width:100%;
   background: #CF5565;
@@ -242,6 +242,7 @@ header .jumbotron {
 	overflow: hidden;
 	position: cover;
 }
+
 /** slider size **/
 #Slider{
 	border: 0px solid #FFEB8B;       /** frame of the slideshow **/
