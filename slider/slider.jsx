@@ -62,7 +62,7 @@ var Carousel = React.createClass({
 				),
 				this.renderArrow('next')
 			),
-			this.renderThumbs()
+			
 		);
 	},
 
@@ -85,30 +85,9 @@ var Carousel = React.createClass({
 		return React.createElement('div', props);
 	},
 
-	renderThumbs: function renderThumbs() {
-		var thumbnails = null;
+	
 
-		if (this.props.showThumbnails) {
-			thumbnails = React.createElement(
-				'div',
-				{ className: 'carousel--thumbs' },
-				this.props.images.map(this.renderThumb)
-			);
-		}
-
-		return thumbnails;
-	},
-
-	renderThumb: function renderThumb(src, index) {
-		var selected = index === this.state.selectedIndex ? ' carousel--selected' : '';
-		var props = {
-			className: 'carousel--thumb' + selected,
-			key: index,
-			onClick: this.handleThumbClick.bind(null, index),
-			src: src
-		};
-		return React.createElement('img', props);
-	},
+	
 
 	getProps: function getProps() {
 		var props = {
@@ -125,40 +104,9 @@ var Carousel = React.createClass({
 		return props;
 	},
 
-	handleKeyDown: function handleKeyDown(event) {
-		var left = 37;
-		var up = 38;
-		var right = 39;
-		var down = 40;
-		var key = event.which;
 
-		if (key === down || key === left) {
-			this.goInDirection('previous');
-		} else if (key === up || key === right) {
-			this.goInDirection('next');
-		}
-	},
 
-	handleMouseEnter: function handleMouseEnter() {
-		clearTimeout(this.timeout);
-	},
 
-	handleMouseLeave: function handleMouseLeave() {
-		this.progressSlideshow();
-	},
-
-	handleThumbClick: function handleThumbClick(index) {
-		this.goToIndex(index);
-	},
-
-	progressSlideshow: function progressSlideshow() {
-		this.setState({ animationDirection: 'next' });
-
-		this.timeout = setTimeout(function () {
-			this.goInDirection('next');
-			this.progressSlideshow();
-		}.bind(this), this.props.slideshowDelay);
-	},
 
 	goToIndex: function goToIndex(index) {
 		var direction = this.state.selectedIndex > index ? 'previous' : 'next';
