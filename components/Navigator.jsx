@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link }
 import Home from './Home.jsx';
 import Login from './Login.jsx';
 
-class App extends Component {
+class Navigator extends Component {
    render() {
       return (
          <Router>
@@ -23,4 +23,4 @@ class App extends Component {
       );
    }
 }
-export default App;
+export default Navigator;
