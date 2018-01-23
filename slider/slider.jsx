@@ -86,6 +86,14 @@ var Carousel = React.createClass({
 	},
 
 	
+	progressSlideshow: function progressSlideshow() {
+		this.setState({ animationDirection: 'next' });
+
+		this.timeout = setTimeout(function () {
+			this.goInDirection('next');
+			this.progressSlideshow();
+		}.bind(this), this.props.slideshowDelay);
+	},
 
 	
 
