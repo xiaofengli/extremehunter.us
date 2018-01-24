@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MyApp from './components/Navigator.jsx';
+import Navigator from './components/Navigator.jsx';
 
-ReactDOM.render(<MyApp />, document.getElementById('navigator'));
+ReactDOM.render(<Navigator />, document.getElementById('navigator'));
