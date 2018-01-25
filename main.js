@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navigator from './components/Navigator.jsx';
-import DemoCarousel from './components/Slider/Slider.jsx';
+import Slider from './components/Slider/Slider.jsx';
 
 /*
 ReactDOM.render(
@@ -14,5 +14,5 @@ ReactDOM.render(
 */
 
 ReactDOM.render(
-		<DemoCarousel/>
+		<Navigator/>
 		, document.querySelector('#demo-carousel'));

@@ -30,4 +30,3 @@ class Navigator extends Component {
    }
 }
 export default Navigator;
-//ReactDOM.render(<Navigator />, document.getElementById('navigator'));
