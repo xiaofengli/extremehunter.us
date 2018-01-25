@@ -17,7 +17,7 @@ class Navigator extends Component {
                   <Link to={'/partners'}>Partners</Link> |
                   <Link to={'/aboutus'}>About US</Link>
                  </nav>
-               <hr />
+               <hr/>
                <Switch>
                   <Route exact path='/' component={Home} />
                   <Route exact path='/products' component={Products} />
