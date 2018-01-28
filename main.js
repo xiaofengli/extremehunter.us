@@ -1,18 +1,14 @@
-import React from 'react';
+
 import ReactDOM from 'react-dom';
 import Navigator from './components/Navigator.jsx';
-import Slider from './components/Slider/Slider.jsx';
+import React, { Component } from 'react';
+import style from './node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 
-/*
-ReactDOM.render(
-		<div><Navigator/>
-		     <DemoCarousel/>
-		</div>
-		, document.querySelector('#demo-carousel'));
-
-* need to get css working and use class .demo-carousel
-*/
+import { Carousel } from 'react-responsive-carousel';
+import DemoCarousel from './components/slider/Slider.jsx';
 
 ReactDOM.render(
-		<Navigator/>
-		, document.querySelector('#demo-carousel'));
+	<div><Navigator/>
+		 <DemoCarousel/>
+	</div>
+	, document.querySelector('#demo-carousel'));
