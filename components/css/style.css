@@ -27,7 +27,7 @@ header {
 
 .logo {
    float: left;
-   content:url("components/header/images/header_logo.jpg");
+   content:url("../header/images/header_logo.jpg");
    width:500px; /*width of your image*/
    height:80px; /*height of your image*/
 }

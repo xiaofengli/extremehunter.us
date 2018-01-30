@@ -5,7 +5,6 @@ import Home from './page/Home.jsx';
 import Products from './page/Products.jsx';
 import Partners from './page/Partners.jsx';
 import AboutUS from './page/AboutUS.jsx';
-//import ReactDOM from 'react-dom';
 
 class Navigator extends Component {
    render() {

@@ -22,5 +22,4 @@ class DemoCarousel extends Component {
       );
   }
 }
-export default DemoCarousel
-//ReactDOM.render(<DemoCarousel />, document.querySelector('#demo-carousel'));
+export default DemoCarousel;
