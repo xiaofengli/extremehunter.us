@@ -6,6 +6,9 @@ import Products from './page/Products.jsx';
 import Partners from './page/Partners.jsx';
 import AboutUS from './page/AboutUS.jsx';
 
+/*
+ * https://stackoverflow.com/questions/39737126/display-complete-new-page-with-react-router
+ * */
 class Navigator extends Component {
    render() {
       return (
