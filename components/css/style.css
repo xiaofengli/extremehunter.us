@@ -14,7 +14,7 @@ to be in the center*/
 }
 
 /* simply just make it fixed and expand to 100%*/
-header {
+.header {
 	top: 0;
     position: fixed;
     width:100%;
@@ -37,7 +37,7 @@ header {
 	padding-top: 40px;
 }
 
-footer {
+.footer {
 		background:#333;
 		height: 100px;
 		color:#999;
@@ -55,11 +55,6 @@ a {
 }
 
 
-
-
-body {
-    
-  }
   
   .main {
     font: 16px / 1 Arial;
