@@ -1,12 +1,11 @@
 {
   "name": "ExtremeHunterUS",
   "version": "1.0.0",
-  "description": "",
+  "description": "http://krasimirtsonev.com/blog/article/javascript-library-starter-using-webpack-es6",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "watch": "webpack -d --watch",
-    "build": "webpack"
+    "watch": "webpack -d --watch"
   },
   "author": "",
   "license": "ISC",
