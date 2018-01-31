@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel } from 'react-responsive-carousel';
 
-class DemoCarousel extends Component {
+class Slider extends Component {
   render() {
       return (
-          <Carousel infiniteLoop= 'true' autoPlay='true' interval='5000'>
+          <Carousel infiniteLoop= {true} autoPlay={true} interval={5000}>
               <div>
                   <img src="./components/slider/images/1.jpeg" />
                   <p className="legend">Legend 1</p>
@@ -22,4 +22,4 @@ class DemoCarousel extends Component {
       );
   }
 }
-export default DemoCarousel;
+export default Slider;

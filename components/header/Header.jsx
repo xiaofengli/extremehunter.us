@@ -8,7 +8,7 @@ export default class Header extends Component {
          <header class="header">
   		 <div class= "container">
   		 	<div class="logo"></div>
-  		 	<Navigator infiniteLoop = 'true' />
+  		 	<Navigator/>
  	 	 </div>
 	     </header>
       );
