@@ -1,8 +1,8 @@
 var config = {
    entry: './src/main.js',
    output: {
-      path:'/',
-      filename: 'index.js',
+      path: __dirname+"/dist/js",
+      filename: 'index.js'
    },
    devServer: {
       inline: true,
