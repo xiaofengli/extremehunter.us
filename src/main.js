@@ -7,10 +7,11 @@ import {Carousel} from 'react-responsive-carousel';
 import Slider from '../components/slider/Slider.jsx';
 import Header from '../components/header/Header.jsx';
 import Footer from '../components/footer/Footer.jsx';
+import  Home from '../components/page/Home.jsx';
 ReactDOM.render(
-	<div><Header/>
-		<Slider/>
-		<Footer/>
+	<div>
+		<Home/>
+		
 	</div>
 	, 
     /*Display*/
