@@ -1,6 +1,6 @@
 import React, {Component}  from 'react';
 import Navigator from '../../components/Navigator.jsx';
-//import MyStyle from '../../components/css/style.css';
+import MyStyle from '../../components/css/style.css';
 
 export default class Header extends Component {
    render() {

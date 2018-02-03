@@ -1,8 +1,8 @@
 var config = {
    entry: './src/main.js',
    output: {
-      path:'/',
-      filename: 'index.js',
+      path: __dirname+"/dist/js",
+      filename: 'index.js'
    },
    devServer: {
       inline: true,
@@ -22,10 +22,7 @@ var config = {
         test: /\.css$/,
         use: ['style-loader','css-loader']
       },
-      {
-        test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: ['url']
-      }
+      { test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, loader: 'url-loader?limit=100000' }
     ]
   }
 }
